@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="github" fetch="ssh://git@github.com" />
+  <remote name="oe" fetch="git://git.openembedded.org" />
+  <remote name="yocto" fetch="git://git.yoctoproject.org" />
+
+  <default revision="master" sync-j="2" />
+
+  <project name="poky" path="." remote="yocto" />
+  <project name="meta-raspberrypi" path="meta-raspberrypi" remote="yocto" />
+  <project name="meta-openembedded" path="meta-openembedded" remote="oe" />
+  <project name="zenotec/meta-zenotec" path="meta-zenotec" remote="github" />
+
+</manifest>
+
